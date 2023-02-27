@@ -1,5 +1,5 @@
 
-from .model import load_model, predict_sales
+from model import load_model, predict_sales
 from flask import Flask, request, make_response
 from sklearn.pipeline import Pipeline
 from typing import Tuple

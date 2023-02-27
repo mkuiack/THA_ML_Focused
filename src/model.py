@@ -13,7 +13,7 @@ def load_model() -> Pipeline:
     :return: sklearn Pipeline
     """
 
-    ml_pipeline = cloudpickle.load(open("data/ml_pipeline.joblib", 'rb'))
+    ml_pipeline = cloudpickle.load(open("/usr/data/ml_pipeline.joblib", 'rb'))
     return ml_pipeline
 
 
