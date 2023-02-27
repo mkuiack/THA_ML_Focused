@@ -3,7 +3,16 @@ import pandas as pd
 
 
 class ExtractDateComponents(BaseEstimator, TransformerMixin):
-
+    """
+    Feature generation step, decomposing date components dayofyear, dayofweek, week, month, and year, creating 
+    five ordinally encoded columns from a date string column 'date'. The date string must be a pd.Datetime column.
+    
+    Fit [Optional]:
+        ExtractDateComponents().fit(X, y=y)
+    Transform:
+        ExtractDateComponents().transform(X)
+    """
+    
     def fit(self, X, y=None):
         return self
 
