@@ -27,8 +27,6 @@ def create_app() -> Tuple[Flask, Pipeline] :
     return app, pipeline
 
 
-
-
 if __name__ == "__main__":
 
     app, pipeline  = create_app()
